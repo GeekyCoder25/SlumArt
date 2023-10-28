@@ -7,7 +7,7 @@ const Carousel = () => {
 	const carouselImages = [
 		{id: 1, image: '/images/carousel.png'},
 		{id: 2, image: '/images/carousel2.png'},
-		{id: 3, image: '/blog2.png'},
+		{id: 3, image: 'images/blog2.png'},
 		{id: 4, image: '/images/blog.png'},
 	];
 
