@@ -131,7 +131,7 @@ const Blog = () => {
 					))}
 				</div>
 			</section>
-			<section className="flex max-w-screen-xl mt-10 m-auto my-5">
+			<section className="flex max-w-screen-xl m-auto my-20">
 				<div className="flex-1">
 					<Image
 						src={'/images/blog2.png'}

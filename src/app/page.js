@@ -7,7 +7,7 @@ export default function Home() {
 		<main className="flex flex-col gap-16">
 			<Carousel />
 			<Featured />
-			<section className="flex bg-gray-100 max-w-screen-xl mt-10 m-auto ">
+			<section className="flex bg-gray-100 max-w-screen-xl mt-10 m-auto flex-wrap flex-col md:flex-row">
 				<div className="flex-1">
 					<Image
 						src={'/images/explore.png'}
@@ -35,7 +35,7 @@ export default function Home() {
 					</span>
 				</div>
 			</section>
-			<section className="flex bg-gray-100 max-w-screen-xl mt-10 m-auto ">
+			<section className="flex bg-gray-100 max-w-screen-xl mt-10 m-auto flex-wrap flex-col md:flex-row">
 				<div className="flex-1 flex flex-col gap-10 justify-center p-10">
 					<h4 className="text-2xl font-bold font-bai">Our Story</h4>
 					<p className="font-inter text-lg font-medium">

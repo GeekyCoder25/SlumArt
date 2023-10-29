@@ -24,30 +24,36 @@ const Carousel = () => {
 
 	return (
 		<section className="relative h-screen">
-			<i
-				className="fas fa-chevron-left absolute top-1/2 z-10 left-10 text-gray-50 text-4xl cursor-pointer"
-				onClick={() =>
-					setCarouselIndex(prev =>
-						prev === carouselImages[0].id
-							? carouselImages[carouselImages.length - 1].id
-							: prev - 1
-					)
-				}
-			></i>
-			<i
-				className="fas fa-chevron-right absolute top-1/2 z-10 right-10 text-gray-50 text-4xl cursor-pointer"
-				onClick={() =>
-					setCarouselIndex(prev =>
-						prev < carouselImages.length ? prev + 1 : carouselImages[0].id
-					)
-				}
-			></i>
-			<h3 className="absolute bottom-52 text-gray-50 font-bold font-bai text-7xl text-center w-full">
+			<span className="absolute top-1/2 z-10 left-10 hidden md:block">
+				<i
+					className="fas fa-chevron-left text-gray-50 text-4xl cursor-pointer"
+					onClick={() =>
+						setCarouselIndex(prev =>
+							prev === carouselImages[0].id
+								? carouselImages[carouselImages.length - 1].id
+								: prev - 1
+						)
+					}
+				></i>
+			</span>
+			<span className="absolute top-1/2 z-10 right-10 hidden md:block">
+				<i
+					className="fas fa-chevron-right text-gray-50 text-4xl cursor-pointer"
+					onClick={() =>
+						setCarouselIndex(prev =>
+							prev < carouselImages.length ? prev + 1 : carouselImages[0].id
+						)
+					}
+				></i>
+			</span>
+
+			<h3 className="absolute bottom-52 text-gray-50 font-bold font-bai text-7xl text-center w-full z-10">
 				New This Week
 			</h3>
-			<span className="absolute bottom-40 text-gray-50 font-bold font-bai text-2xl text-center w-full">
+			<span className="absolute bottom-40 text-gray-50 font-bold font-bai text-2xl text-center w-full z-10">
 				Discover Art You Love
 			</span>
+			<span className="absolute h-full w-full bg-black/40 z-0"></span>
 			{carouselImages.map(index => (
 				<img
 					src={index.image}

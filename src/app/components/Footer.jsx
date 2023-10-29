@@ -22,8 +22,8 @@ const Footer = () => {
 		},
 	];
 	return (
-		<footer className="bg-gray-900 text-white mt-36 p-20">
-			<section className="max-w-screen-xl mx-auto flex justify-between ">
+		<footer className="bg-gray-900 text-white mt-36 px-5 py-10 md:p-20">
+			<section className="max-w-screen-xl mx-auto flex flex-col md:flex-row gap-8 justify-between ">
 				<div>
 					<h2 className="font-inter font-semibold">FOLLOW US</h2>
 					<span className="flex gap-5 mt-3">

@@ -6,10 +6,10 @@ const About = () => {
 		<div className="flex mt flex-col gap-16">
 			<img
 				src={'/images/team.png'}
-				className={`h-screen w-screen object-cover`}
+				className="h-screen w-screen object-cover"
 				alt="team"
 			/>
-			<section className="flex max-w-screen-xl mt-10 m-auto items-center">
+			<section className="flex max-w-screen-xl mt-10 m-auto items-center flex-col md:flex-row">
 				<div className="flex-1">
 					<Image
 						src={'/images/story.png'}
@@ -19,7 +19,7 @@ const About = () => {
 						alt="story"
 					/>
 				</div>
-				<div className="flex-1 flex flex-col gap-10 justify-center p-10">
+				<div className="flex-1 flex flex-col gap-10 justify-center p-4 md:p-10">
 					<h4 className="text-2xl font-bold font-bai">Our Story</h4>
 					<p className="font-inter text-lg font-medium">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -37,7 +37,7 @@ const About = () => {
 					</p>
 				</div>
 			</section>
-			<section className="flex gap-5  max-w-screen-xl m-auto">
+			<section className="flex gap-5 max-w-screen-xl m-auto flex-col md:flex-row p-4">
 				<div>
 					<h4 className="text-2xl font-bold font-bai mb-5">What We Do</h4>
 					<p className="font-inter text-lg font-medium">
@@ -72,8 +72,8 @@ const About = () => {
 					</p>
 				</div>
 			</section>
-			<section className="flex max-w-screen-xl mt-10 m-auto items-center">
-				<div className="flex-1 flex flex-col gap-10 justify-center p-10">
+			<section className="flex max-w-screen-xl mt-10 m-auto items-center flex-col md:flex-row">
+				<div className="flex-1 flex flex-col gap-10 justify-center p-4 md:p-10">
 					<h4 className="text-2xl font-bold font-bai">Become a Partner</h4>
 					<p className="font-inter text-lg font-medium">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -100,7 +100,7 @@ const About = () => {
 					/>
 				</div>
 			</section>
-			<section className="flex max-w-screen-xl mt-10 m-auto items-center">
+			<section className="flex max-w-screen-xl mt-10 m-auto items-center flex-col md:flex-row">
 				<div className="flex-1">
 					<Image
 						src={'/images/donations.png'}
@@ -110,7 +110,7 @@ const About = () => {
 						alt="story"
 					/>
 				</div>
-				<div className="flex-1 flex flex-col gap-10 justify-center p-10">
+				<div className="flex-1 flex flex-col gap-10 justify-center p-4 md:p-10">
 					<h4 className="text-2xl font-bold font-bai">Donations</h4>
 					<p className="font-inter text-lg font-medium">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
