@@ -42,7 +42,7 @@ const Navbar = () => {
 			<ul
 				className={`fixed md:static top-0 ${
 					showMobileNav ? 'right-0' : '-right-96'
-				} h-screen md:h-fit w-72 md:w-fit bg-gray-900 z-30 md:bg-transparent flex flex-col md:flex-row md: ml-auto gap-8 pl-6 pt-28 md:pt-0`}
+				} h-screen md:h-fit w-72 md:w-fit bg-gray-900 z-30 md:bg-transparent flex flex-col md:flex-row md: ml-auto gap-8 pl-6 pt-28 md:pt-0 transition-all ease-in-out duration-500`}
 			>
 				<span className="absolute right-4 top-6 md:hidden">
 					<i
