@@ -98,10 +98,14 @@ const Blog = () => {
 
 	return (
 		<div>
-			<section className="relative h-screen font-bai">
-				<div className="absolute top-1/3 text-gray-50 w-full flex flex-col gap-5 pl-10 z-20 ">
-					<h3 className="font-bold font-bai text-7xl ">Blog Title</h3>
-					<span className="font-semibold text-2xl ">Short Description</span>
+			<section className="relative h-[50vh] min-h-[600px] md:h-screen font-bai">
+				<div className="absolute top-1/3 text-gray-50 w-full flex flex-col gap-5 pl-6 md:pl-10 z-20 ">
+					<h3 className="font-bold font-bai text-5xl md:text-7xl ">
+						Blog Title
+					</h3>
+					<span className="font-semibold text-lg md:text-2xl ">
+						Short Description
+					</span>
 					<span>
 						<button className="bg-gray-100 text-gray-950 font-semibold rounded-md p-3 text-xl mt-20">
 							READ MORE
@@ -131,7 +135,7 @@ const Blog = () => {
 					))}
 				</div>
 			</section>
-			<section className="flex max-w-screen-xl m-auto my-20">
+			<section className="flex max-w-screen-xl m-auto my-20 flex-col-reverse md:flex-row ">
 				<div className="flex-1">
 					<Image
 						src={'/images/blog2.png'}
@@ -141,7 +145,7 @@ const Blog = () => {
 						alt="explore"
 					/>
 				</div>
-				<div className="flex-1 flex flex-col gap-5 justify-center p-10">
+				<div className="flex-1 flex flex-col gap-5 justify-center py-10 px-5 md:p-10">
 					<h4 className="text-6xl font-bold font-bai">Blog Title</h4>
 					<p className="font-inter text-lg font-medium">Short Description</p>
 					<span>

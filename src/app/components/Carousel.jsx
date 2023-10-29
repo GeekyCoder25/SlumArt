@@ -23,7 +23,7 @@ const Carousel = () => {
 	}, [carouselImages.length, carouselIndex]);
 
 	return (
-		<section className="relative h-screen">
+		<section className="relative h-[50vh] min-h-[500px] md:h-screen">
 			<span className="absolute top-1/2 z-10 left-10 hidden md:block">
 				<i
 					className="fas fa-chevron-left text-gray-50 text-4xl cursor-pointer"

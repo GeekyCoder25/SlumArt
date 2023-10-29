@@ -6,7 +6,7 @@ const About = () => {
 		<div className="flex mt flex-col gap-16">
 			<img
 				src={'/images/team.png'}
-				className="h-screen w-screen object-cover"
+				className="w-screen object-cover h-[50vh] min-h-[500px] md:h-screen"
 				alt="team"
 			/>
 			<section className="flex max-w-screen-xl mt-10 m-auto items-center flex-col md:flex-row">
