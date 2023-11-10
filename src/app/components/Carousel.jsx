@@ -5,10 +5,10 @@ const Carousel = () => {
 	const [carouselIndex, setCarouselIndex] = useState(1);
 
 	const carouselImages = [
-		{id: 1, image: '/images/carousel.png'},
-		{id: 2, image: '/images/carousel2.png'},
-		{id: 3, image: 'images/blog2.png'},
-		{id: 4, image: '/images/blog.png'},
+		{id: 1, image: '/images/carousel1.jpg'},
+		{id: 2, image: '/images/carousel2.jpg'},
+		{id: 3, image: '/images/carousel3.jpg'},
+		{id: 4, image: '/images/carousel4.jpg'},
 	];
 
 	useEffect(() => {

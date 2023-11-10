@@ -5,14 +5,14 @@ const About = () => {
 	return (
 		<div className="flex mt flex-col gap-16">
 			<img
-				src={'/images/team.png'}
+				src={'/images/team.jpg'}
 				className="w-screen object-cover h-[50vh] min-h-[500px] md:h-screen"
 				alt="team"
 			/>
 			<section className="flex max-w-screen-xl mt-10 m-auto items-center flex-col md:flex-row">
 				<div className="flex-1">
 					<Image
-						src={'/images/story.png'}
+						src={'/images/story.jpg'}
 						width={720}
 						height={627}
 						className="max-w-full"
@@ -92,7 +92,7 @@ const About = () => {
 				</div>
 				<div className="flex-1">
 					<Image
-						src={'/images/partner.png'}
+						src={'/images/partner.jpg'}
 						width={720}
 						height={627}
 						className="max-w-full"

@@ -6,84 +6,43 @@ import {useEffect, useState} from 'react';
 
 const Blog = () => {
 	const [carouselIndex, setCarouselIndex] = useState(1);
-	const [carouselImages, setCarouselImages] = useState([]);
+	const blogImages = [];
 
-	const blogImages = [
-		{
-			id: 1,
-			image: '/images/blog.png',
+	for (let index = 1; index < 40; index++) {
+		blogImages.push({
+			id: index,
+			image: `blog${index}.jpg`,
 			title: 'Blog Title',
 			desc: 'Short Description',
 			date: '11/10/23',
-		},
-		{
-			id: 2,
-			image: '/images/carousel2.png',
-			title: 'Blog Title',
-			desc: 'Short Description',
-			date: '11/10/23',
-		},
-		{
-			id: 3,
-			image: '/images/carousel.png',
-			title: 'Blog Title',
-			desc: 'Short Description',
-			date: '11/10/23',
-		},
-		{
-			id: 4,
-			image: '/images/blog2.png',
-			title: 'Blog Title',
-			desc: 'Short Description',
-			date: '11/10/23',
-		},
-		{
-			id: 5,
-			image: '/images/carousel.png',
-			title: 'Blog Title',
-			desc: 'Short Description',
-			date: '11/10/23',
-		},
-		{
-			id: 6,
-			image: '/images/carousel.png',
-			title: 'Blog Title',
-			desc: 'Short Description',
-			date: '11/10/23',
-		},
-		{
-			id: 7,
-			image: '/images/carousel.png',
-			title: 'Blog Title',
-			desc: 'Short Description',
-			date: '11/10/23',
-		},
-		{
-			id: 8,
-			image: '/images/carousel.png',
-			title: 'Blog Title',
-			desc: 'Short Description',
-			date: '11/10/23',
-		},
-		{
-			id: 9,
-			image: '/images/carousel.png',
-			title: 'Blog Title',
-			desc: 'Short Description',
-			date: '11/10/23',
-		},
-		{
-			id: 10,
-			image: '/images/carousel.png',
-			title: 'Blog Title',
-			desc: 'Short Description',
-			date: '11/10/23',
-		},
-	];
+		});
+	}
 
-	useEffect(() => {
-		setCarouselImages(blogImages.slice(0, 3));
-	}, []);
+	// const blogImages = [
+	// 	{
+	// 		id: 1,
+	// 		image: 'blog1',
+	// 		title: 'Blog Title',
+	// 		desc: 'Short Description',
+	// 		date: '11/10/23',
+	// 	},
+	// 	{
+	// 		id: 2,
+	// 		image: 'blog1',
+	// 		title: 'Blog Title',
+	// 		desc: 'Short Description',
+	// 		date: '11/10/23',
+	// 	},
+	// 	{
+	// 		id: 3,
+	// 		image: 'blog1',
+	// 		title: 'Blog Title',
+	// 		desc: 'Short Description',
+	// 		date: '11/10/23',
+	// 	},
+	// ];
+
+	const carouselImages = blogImages.slice(0, 3);
 
 	useEffect(() => {
 		const bgTimeout = setTimeout(() => {
@@ -115,7 +74,7 @@ const Blog = () => {
 				<span className="absolute h-full w-full bg-black/40 z-10"></span>
 				{carouselImages.map(index => (
 					<img
-						src={index.image}
+						src={`/images/${index.image}`}
 						key={index.id}
 						className={`absolute h-full w-full object-cover ${
 							carouselIndex === index.id ? '-z-10' : 'hidden -z-20'
@@ -138,9 +97,9 @@ const Blog = () => {
 			<section className="flex max-w-screen-xl m-auto my-20 flex-col-reverse md:flex-row ">
 				<div className="flex-1">
 					<Image
-						src={'/images/blog2.png'}
-						width={720}
-						height={627}
+						src={'/images/blogTitle.jpg'}
+						width={500}
+						height={320}
 						className="max-w-full"
 						alt="explore"
 					/>
@@ -178,7 +137,7 @@ const Blog = () => {
 				<span className="absolute h-full w-full bg-black/40 z-10"></span>
 				{carouselImages.slice(0, 1).map(index => (
 					<img
-						src={index.image}
+						src={`/images/${index.image}`}
 						key={index.id}
 						className={'absolute h-full w-full object-cover -z-10'}
 						alt="blog_image"
@@ -202,7 +161,7 @@ const BlogCard = ({index}) => {
 		<div className="w-1/4 h-96 text-center min-w-fit">
 			<div className="h-80 flex justify-center">
 				<Image
-					src={image}
+					src={`/images/${image}`}
 					width={308}
 					height={407}
 					alt={title}

@@ -10,7 +10,7 @@ export default function Home() {
 			<section className="flex bg-gray-100 max-w-screen-xl mt-10 m-auto flex-wrap flex-col md:flex-row">
 				<div className="flex-1">
 					<Image
-						src={'/images/explore.png'}
+						src={'/images/explore.jpg'}
 						width={720}
 						height={627}
 						className="max-w-full"
@@ -53,7 +53,7 @@ export default function Home() {
 				</div>
 				<div className="flex-1">
 					<Image
-						src={'/images/team.png'}
+						src={'/images/team.jpg'}
 						width={720}
 						height={627}
 						className="max-w-full"
